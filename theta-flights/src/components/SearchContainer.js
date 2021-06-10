@@ -5,25 +5,24 @@ import "../App.css";
 import './SearchContainer.css';
 
 const SearchContainer = () => {
-  const [movies, setMovies] = useState([]);
+  const [events, setEvents] = useState([]);
 	const [searchValue, setSearchValue] = useState('');
 
-	const getMovieRequest = async (searchValue) => {
+	const getEventRequest = async (searchValue) => {
     
-		const FEATURED_API = `http://www.omdbapi.com/?s=${searchValue}&apikey=2215d555`;
+		const FEATURED_API = `https://app.ticketmaster.com/discovery/v2/events.json?keyword=${searchValue}&countryCode=US&apikey=gCuBI3xKu5yQnsJ8onGcrmLfnAA7NpHt`;
 
 		const response = await fetch(FEATURED_API);
 		const responseJson = await response.json();
 
-		if (responseJson.Search) {
-			setMovies(responseJson.Search);
+		if (responseJson._embedded) {
+			setEvents(responseJson._embedded);
 		}
 	};
 
 	useEffect(() => {
-		getMovieRequest(searchValue);
+		getEventRequest(searchValue);
 	}, [searchValue]);
-
 
 
 
@@ -32,9 +31,9 @@ const SearchContainer = () => {
 			<div>
 				<SearchInput searchValue={searchValue} setSearchValue={setSearchValue} />
 			</div>
-			<div className="MovieCards" >
+			<div className="EventCards" >
 				<SearchResults
-					movies={movies}
+					events={events}
 				/>
 			</div>
 		</div>

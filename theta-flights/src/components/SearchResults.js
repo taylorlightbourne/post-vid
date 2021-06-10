@@ -1,21 +1,27 @@
 import React from 'react';
 import "../App.css";
 import './SearchResults.css'
-
+// import { Link } from 'react-router-dom';
+// { props: { name, images, id } }
 
 const SearchResults = (props) => {
 	return (
         <>
         <div className="results__container">
-			{props.movies.map((movie, index) => (
-            <div className="movie">
-		    <div className="movie-poster">
-			    <img src={movie.Poster} alt="Poster" />
+			{
+			// props.events.map
+			((events, index) => (
+            <div className="events">
+		    <div className="event-image">
+			    <img src={events.images[0]} alt="Poster" />
 		    </div>
-		<div className="movie-info">
-			<h1>{movie.Title}</h1>
-			<p>{movie.Year}</p>
+		<div className="event-info">
+			<h1>{events.name}</h1>
+			<p>{events.id}</p>
 		</div>
+		{/* <Link to={`/event/${id}`}>
+            <button>View More</button>
+		</Link> */}
 	</div>
 			))}
 		</div>
