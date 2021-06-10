@@ -1,9 +1,11 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import Home from './components/pages/Home';
-import Search from './components/pages/Search';
-import Register from './components/pages/Register';
-import Results from './components/pages/Results';
+import Home from './pages/Home';
+import Search from './pages/SearchPage';
+import Register from './pages/Register';
+import EventContainer from '../src/components/EventContainer';
+import Cart from './pages/Cart';
+import ErrorPage from './pages/ErrorPage'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 
@@ -17,7 +19,9 @@ function App() {
         <Route path='/' exact component={Home} />
         <Route path='/search' component={Search} />
         <Route path='/register' component={Register} />
-        <Route path='/results' component={Results} />
+        <Route exact path="/event/:id" component={EventContainer} />
+        <Route path='/cart' component={Cart} />
+        <Route path="/err" component={ErrorPage} />
       </Switch>
   </Router>
 </>
@@ -25,4 +29,3 @@ function App() {
 }
 
 export default App;
-// http://partners.api.skyscanner.net/apiservices/browsequotes/v1.0/FR/eur/en-US/uk/us/anytime/anytime?apikey=prtl6749387986743898559646983194

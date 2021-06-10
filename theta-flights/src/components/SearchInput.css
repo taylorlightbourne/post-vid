@@ -22,41 +22,26 @@
 }
 .main-search {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 .search-header {
     display: flex;
     align-items: flex-start;
     padding-left: 5%;
 }
-.input__container {
-    display: flex;
-    flex-direction: row;
-}
-.input__container h3 {
-    color: rgb(2, 2, 66); 
-}
-.input__section {
-    display: flex;
-    flex-direction: column;
-    line-height: 50px
-}
-.search-input {
+.input__field {
     padding: 8px 20px;
     border-radius: 2px;
     margin-right: 10px;
-    outline: 1px solid rgb(2, 2, 66); 
-    border: 1px solid rgb(2, 2, 66); 
+    outline: 1px solid black;
+    border: 1px solid black;
     font-size: 18px;
     margin-bottom: 16px;
     border: 1px solid #fff;
-}
-.input__container__one, 
-.input__container__two {
-    display: flex;
-    flex-direction: row;
 }
 .submit__btn {
     background-color:  rgb(2, 2, 66);

@@ -1,0 +1,17 @@
+.results__container {
+    height: max-content;
+    background-color: white;
+    display: flex;
+    flex-direction: row;  
+    width: 100%;
+    object-fit: contain;
+    flex-wrap: wrap;
+}
+.movie {
+    padding: 5rem;
+    background-color: #fff;
+    width: min-content;
+}
+h1, p {
+    text-align: center;
+  }
