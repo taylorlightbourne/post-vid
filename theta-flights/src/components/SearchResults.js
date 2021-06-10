@@ -1,31 +1,33 @@
 import React from 'react';
 import "../App.css";
 import './SearchResults.css'
-// import { Link } from 'react-router-dom';
-// { props: { name, images, id } }
+import { Link } from 'react-router-dom';
 
 const SearchResults = (props) => {
+	const events = props.events.events ? props.events.events: []
+	
 	return (
-        <>
         <div className="results__container">
-			{
-			// props.events.map
-			((events, index) => (
-            <div className="events">
-		    <div className="event-image">
-			    <img src={events.images[0]} alt="Poster" />
-		    </div>
-		<div className="event-info">
-			<h1>{events.name}</h1>
-			<p>{events.id}</p>
-		</div>
-		{/* <Link to={`/event/${id}`}>
-            <button>View More</button>
-		</Link> */}
-	</div>
+			{events.map((events, index) => (
+			<div className="events">
+				<div className="event__header">
+					<h1>{events.name}</h1>
+				</div>
+		    	<div className="event__image">
+			    	<img src={events.images[0].url} alt="Poster" />
+		    	</div>
+				<div className="event-info">
+					<p>{events.url}</p>
+				</div>
+				<div className="singlePage__Link">
+					<Link to={`/event/${events.id}`}>
+						<button>View More</button>
+					</Link>
+				</div>
+			</div>
 			))}
+
 		</div>
-        </>
 	);
 };
 

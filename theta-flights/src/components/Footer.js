@@ -8,7 +8,7 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join the THETA<i className="fa fa-plane"></i> newsletter to receive our best vacation deals
+          Join the EVENT newsletter to receive our best vacation deals
         </p>
         <p className='footer-subscription-text'>
           You can unsubscribe at any time.
@@ -64,10 +64,10 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-            THETA <i className="fa fa-plane"></i>
+            EVENTS
             </Link>
           </div>
-          <small class='website-rights'>THETA © 2021</small>
+          <small class='website-rights'>EVENTS © 2021</small>
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'

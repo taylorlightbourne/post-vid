@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import SearchInput from '../components/SearchInput';
 import SearchResults from '../components/SearchResults';
 import "../App.css";
 import './SearchContainer.css';
+import ErrorPage from '../pages/ErrorPage';
+// import { Redirect } from 'react-router-dom';
 
 const SearchContainer = () => {
   const [events, setEvents] = useState([]);
@@ -14,28 +16,34 @@ const SearchContainer = () => {
 
 		const response = await fetch(FEATURED_API);
 		const responseJson = await response.json();
-
+		console.log(responseJson)
 		if (responseJson._embedded) {
 			setEvents(responseJson._embedded);
+		} else {
+			setEvents([""])
 		}
 	};
-
-	useEffect(() => {
-		getEventRequest(searchValue);
-	}, [searchValue]);
-
 
 
 	return (
 		<div>
+			{
+				events === [""] ? (<h1 className="EventCards">error</h1>)  : 
+				(
+			<>
 			<div>
-				<SearchInput searchValue={searchValue} setSearchValue={setSearchValue} />
+				<SearchInput searchValue={searchValue} setSearchValue={setSearchValue} getEventRequest={getEventRequest}/>
 			</div>
 			<div className="EventCards" >
 				<SearchResults
 					events={events}
 				/>
 			</div>
+			</>
+
+				)
+			}
+
 		</div>
 	);
 };

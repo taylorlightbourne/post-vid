@@ -5,9 +5,11 @@ import '../components/SearchInput.css';
 
 const SearchInput = (props) => {
 
-    // const handleSubmit = e => {
-    //     e.preventDefault();
-    //   }
+    const handleSubmit = event => {
+        console.log(props.searchValue)
+        event.preventDefault();
+        props.getEventRequest(props.searchValue);
+      }
 
 	return (
         <div className='search-container'>
@@ -17,7 +19,7 @@ const SearchInput = (props) => {
             </div>
             <div className="main-search">
                 <form 
-                // onSubmit={handleSubmit}
+                onSubmit={handleSubmit}
                 >
                     <div>
                         <h3>Search for Events </h3>
@@ -28,7 +30,7 @@ const SearchInput = (props) => {
                         type="input" 
                         name="input"
                         placeholder="Enter a Keyword"
-                        value={props.value}
+                        value={props.searchValue}
                         onChange={(event) => props.setSearchValue(event.target.value)}>
                         </input>
                     </div>

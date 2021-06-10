@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
-import EventContainer from '../src/components/EventContainer';
+import SingleEventContainer from './components/SingleEventContainer';
 import SearchPage from './pages/SearchPage';
 import Cart from './pages/Cart';
 import ErrorPage from './pages/ErrorPage'
@@ -16,10 +16,11 @@ function App() {
       <Navbar />
       <Switch>
         <Route path='/' exact component={Home} />
-        <Route exact path="/event/:id" component={EventContainer} />
+        <Route exact path="/event/:id" component={SingleEventContainer} />
         <Route path='/search' component={SearchPage} />
         <Route path='/cart' component={Cart} />
-        <Route path="/err" component={ErrorPage} />
+        <Route path="/error" component={ErrorPage} />
+        <Route path="/*" component={ErrorPage} />
       </Switch>
   </Router>
 </>

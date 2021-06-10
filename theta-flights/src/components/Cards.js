@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
 import Image1 from '../UI-Assets/images/img-1.jpg';
 
-function Cards() {
+
+function Cards(props) {
+  const [eventInfo, setEventInfo] = useState({})
   return (
     <div className='cards'>
       <h1>Check out these EPIC Destinations!</h1>
@@ -12,8 +14,8 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src={Image1}
-              text='Explore the hidden waterfall deep inside the Amazon Jungle'
-              label='Adventure'
+              text={props.eventInfo.name}
+              label='Concert'
               path='/register'
             />
             <CardItem
