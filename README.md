@@ -1,6 +1,8 @@
 # Post-Vid Event Seach 
 
-### React Project
+## React Project (Images Below)
+
+Medium Article: https://medium.com/@taylorlightbourne/bootcamp-react-project-6de0b9c60cf5
 ---
 
 ## User story:
