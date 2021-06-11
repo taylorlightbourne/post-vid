@@ -3,7 +3,6 @@ import SearchInput from '../components/SearchInput';
 import SearchResults from '../components/SearchResults';
 import './SearchContainer.css';
 import ErrorPage from '../pages/ErrorPage';
-// import { Redirect } from 'react-router-dom';
 
 
 const SearchContainer = () => {
