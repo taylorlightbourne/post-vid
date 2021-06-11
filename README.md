@@ -31,6 +31,7 @@ As a user, I want to find events geared towards my interests. If I am searching 
 
 * The mobile responsiveness is working smoothly. My favorite feature is the hamburger menu being able to open and close on screens smaller than 960px. 
 * I was able to use the css from the cards on the home page, to the fetched Ticketmaster data and to the favorites page. 
+* Once the user adds an event to favs, the "add to favs" button will change to "delete from favs" to prevent multiple of the same event in the favorites cart.
 ---
 
 ### Future Additions:
