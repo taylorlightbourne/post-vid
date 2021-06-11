@@ -19,7 +19,7 @@ export default function SingleEvent(props) {
     <div className="singleEvent__container">
 		<div className="singleEvent__contents">
 			<div className="event__image">
-			    {/* <img src={props.eventInfo.images[0].url} alt="Poster" /> */}
+			    {/* <img src={props.eventInfo.images[0].url} alt="" /> */}
 		    </div>
 			<div className="event__details">
 				<h1>{props.eventInfo.name}</h1>

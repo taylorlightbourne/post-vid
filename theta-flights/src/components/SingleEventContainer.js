@@ -15,7 +15,7 @@ export default function SingleEventContainer({ props }) {
   const getEventById = async () => {
     
 
-    const eventFetch = await fetch(`https://app.ticketmaster.com/discovery/v2/events/${id}.json?&countryCode=US&apikey=gCuBI3xKu5yQnsJ8onGcrmLfnAA7NpHt`, {
+    const eventFetch = await fetch(`https://app.ticketmaster.com/discovery/v2/events/${id}.json?&countryCode=US&apikey=kjvLvGRnouIST4VOf6JGxrYNfutHEsdU`, {
       headers: {
         "Accept": "application/json"
       }

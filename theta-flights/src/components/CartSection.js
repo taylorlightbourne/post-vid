@@ -8,7 +8,10 @@ export default function Cart() {
   console.log(cart);
   return (
     <div className="cart-container">
-      <h1 className="cart-header">Favorites</h1>
+      <div className="cart-header">
+          <h1>Favorites <i class="fa fa-heart"></i></h1>
+          <h3>Save for Later</h3>
+      </div>
       <div className="favorites-cart">
         {cart.events.map((event) => (
           <CartItem event={event} key={event.id} />
@@ -17,3 +20,4 @@ export default function Cart() {
     </div>
   );
 }
+

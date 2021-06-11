@@ -12,7 +12,7 @@ const SearchContainer = () => {
 
 	const getEventRequest = async (searchValue) => {
     
-		const FEATURED_API = `https://app.ticketmaster.com/discovery/v2/events.json?keyword=${searchValue}&countryCode=US&apikey=gCuBI3xKu5yQnsJ8onGcrmLfnAA7NpHt`;
+		const FEATURED_API = `https://app.ticketmaster.com/discovery/v2/events.json?keyword=${searchValue}&countryCode=US&apikey=kjvLvGRnouIST4VOf6JGxrYNfutHEsdU`;
 
 		const response = await fetch(FEATURED_API);
 		const responseJson = await response.json();
