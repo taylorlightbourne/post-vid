@@ -1,3 +1,4 @@
+
 .cards {
     padding: 4rem;
     background: #fff;
@@ -23,13 +24,15 @@
   
   .cards__items {
     margin-bottom: 24px;
+
   }
   
   .cards__item {
     display: flex;
     flex: 1;
-    margin: 0 1rem;
-    border-radius: 10px;
+    margin: 1rem;
+    border-radius: 10px;    
+    background-color: white;
   }
   
   .cards__item__link {

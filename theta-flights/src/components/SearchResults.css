@@ -6,12 +6,5 @@
     width: 100%;
     object-fit: contain;
     flex-wrap: wrap;
+    margin: 1rem;
 }
-.events {
-    padding: 5rem;
-    background-color: #fff;
-    width: min-content;
-}
-h1, p {
-    text-align: center;
-  }

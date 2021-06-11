@@ -1,35 +1,33 @@
 import React from 'react';
-import "../App.css";
+import "./Cards.css";
 import './SearchResults.css'
 import { Link } from 'react-router-dom';
+
 
 const SearchResults = (props) => {
 	const events = props.events.events ? props.events.events: []
 	
 	return (
-        <div className="results__container">
+        <div className="results__container" >
 			{events.map((events, index) => (
-			<div className="events">
-				<div className="event__header">
-					<h1>{events.name}</h1>
-				</div>
-		    	<div className="event__image">
-			    	<img src={events.images[0].url} alt="Poster" />
-		    	</div>
-				<div className="event-info">
-					<p>{events.url}</p>
-				</div>
-				<div className="singlePage__Link">
-					<Link to={`/event/${events.id}`}>
-						<button>View More</button>
-					</Link>
-				</div>
-			</div>
+			      <li className='cards__item'>
+				  <Link className='cards__item__link' to={`/event/${events.id}`}>
+					<figure className='cards__item__pic-wrap' data-category={events.type}>
+					  <img
+						className='cards__item__img'
+						alt='Travel Site'
+						src={events.images[0].url}
+					  />
+					</figure>
+					<div className='cards__item__info'>
+					  <h5 className='cards__item__text'>{events.name}</h5>
+					</div>
+				  </Link>
+				</li>
 			))}
-
 		</div>
+
 	);
 };
 
 export default SearchResults;
-

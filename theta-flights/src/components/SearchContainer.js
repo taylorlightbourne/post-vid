@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import SearchInput from '../components/SearchInput';
 import SearchResults from '../components/SearchResults';
-import "../App.css";
 import './SearchContainer.css';
 import ErrorPage from '../pages/ErrorPage';
 // import { Redirect } from 'react-router-dom';
+
 
 const SearchContainer = () => {
   const [events, setEvents] = useState([]);
@@ -34,7 +34,7 @@ const SearchContainer = () => {
 			<div>
 				<SearchInput searchValue={searchValue} setSearchValue={setSearchValue} getEventRequest={getEventRequest}/>
 			</div>
-			<div className="EventCards" >
+			<div className="SearchResults__container">
 				<SearchResults
 					events={events}
 				/>
