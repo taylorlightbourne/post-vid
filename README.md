@@ -2,7 +2,7 @@
 
 ## React Project (Images Below)
 
-Medium Article: https://medium.com/@taylorlightbourne/bootcamp-react-project-6de0b9c60cf5
+Medium Article: https://taylorlightbourne.medium.com/bootcamp-react-project-be83a86fbd1c
 ---
 
 ## User story:
