@@ -17,7 +17,8 @@ As a user, I want to find events geared towards my interests. If I am searching 
 ---
 
 ### Front-end:
-* HTML & CSS
+* HTML 
+* CSS (Provided by: Brian Design https://www.youtube.com/watch?v=I2UBjN5ER4s&t=2450s)
 * JavaScript
 * React 
 * Redux
