@@ -43,11 +43,11 @@ export default function SingleEvent(props) {
 							onClick={() => 
 								removeFromCart(dispatch, props.eventInfo.id)
 							}
-						>Remove Item from Cart</button>
+						>Remove from Favs</button>
 						):(
 							<button className="addToCart__btn"
 							onClick={() => addToCart(dispatch, props.eventInfo)}
-							>Add to Cart</button>
+							>Add to Favs</button>
 
 						)
 					}
