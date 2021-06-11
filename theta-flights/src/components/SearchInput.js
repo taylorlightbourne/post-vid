@@ -3,6 +3,7 @@ import '../App.css';
 import '../components/SearchInput.css';
 
 
+
 const SearchInput = (props) => {
 
     const handleSubmit = event => {
@@ -14,17 +15,14 @@ const SearchInput = (props) => {
 	return (
         <div className='search-container'>
         <div className="search-contents">
-            <div className="search-header">
-                <h1>Search for Event</h1>
-            </div>
             <div className="main-search">
                 <form 
                 onSubmit={handleSubmit}
                 >
-                    <div>
-                        <h3>Search for Events </h3>
+                    <div className="form__header">
+                        <h3>Search for Events <i class="fas fa-search-location"></i></h3>
                     </div>
-                    <div>
+                    <div className="form__input">
                         <input
                         className="input__field"
                         type="input" 

@@ -1,48 +1,52 @@
 import React, {useState} from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
-import Image1 from '../UI-Assets/images/img-1.jpg';
+import Image1 from '../UI-Assets/image1.jpg';
+import Image2 from '../UI-Assets/image2.jpg';
+import Image3 from '../UI-Assets/image3.jpg';
+import Image4 from '../UI-Assets/image4.jpg';
+import Image5 from '../UI-Assets/image5.jpg';
 
 
 function Cards(props) {
   const [eventInfo, setEventInfo] = useState({})
   return (
     <div className='cards'>
-      <h1>Check out these EPIC Destinations!</h1>
+      <h1>Check out these Upcoming Events!</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
               src={Image1}
-              text={props.eventInfo.name}
-              label='Concert'
-              path='/register'
+              text="San Diego Padres vs. Los Angeles Dodgers"
+              label='Baseball'
+              path='/event/vvG1IZpnrqV-3u'
             />
             <CardItem
-              src={Image1}
-              text='Travel through the Islands of Bali in a Private Cruise'
-              label='Luxury'              
-              path='/register'
+              src={Image2}
+              text='Hamilton (NY)'
+              label='Theater'              
+              path='/event/vvG1GZpn987Nmh'
             />
           </ul>
           <ul className='cards__items'>
             <CardItem
-              src={Image1}
-              text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
-              label='Mystery'
-              path='/register'
+              src={Image3}
+              text='Taco & Margarita Festival'
+              label='Food'
+              path='/event/G5diZ4VBwadXo'
             />
             <CardItem
-              src={Image1}
-              text='Experience Football on Top of the Himilayan Mountains'
-              label='Adventure'
-              path='/register'
+              src={Image4}
+              text='Summer White Concert'
+              label='Music'
+              path='/event/vvG1OZplSH5303'
             />
             <CardItem
-              src={Image1}
-              text='Ride through the Sahara Desert on a guided camel tour'
-              label='Adrenaline'
-              path='/register'
+              src={Image5}
+              text='BriteVibes™ Festival'
+              label='Festival'
+              path='/event/LvZ18b1XhiCQu3OZOhY1y'
             />
           </ul>
         </div>

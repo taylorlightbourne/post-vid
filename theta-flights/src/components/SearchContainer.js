@@ -16,7 +16,7 @@ const SearchContainer = () => {
 
 		const response = await fetch(FEATURED_API);
 		const responseJson = await response.json();
-		console.log(responseJson)
+		
 		if (responseJson._embedded) {
 			setEvents(responseJson._embedded);
 		} else {
@@ -28,7 +28,7 @@ const SearchContainer = () => {
 	return (
 		<div>
 			{
-				events === [""] ? (<h1 className="EventCards">error</h1>)  : 
+				events === [""] ? (<ErrorPage />)  : 
 				(
 			<>
 			<div>
