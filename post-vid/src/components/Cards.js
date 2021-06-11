@@ -34,7 +34,7 @@ function Cards(props) {
               src={Image3}
               text='Taco & Margarita Festival'
               label='Food'
-              path='/event/G5diZ4VBwadXo'
+              path='/event/G5vzZpnS5d3fX'
             />
             <CardItem
               src={Image4}

@@ -8,7 +8,7 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join the Post-Vid<i class="fa fa-child"></i> newsletter to receive our best vacation deals
+          Join the Post-Vid<i class="fa fa-child"></i> newsletter to receive information about exciting upcoming events.
         </p>
         <p className='footer-subscription-text'>
           You can unsubscribe at any time.
@@ -39,7 +39,7 @@ function Footer() {
             <h2>Contact Us</h2>
             <Link to='/'>Contact</Link>
             <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
+            <Link to='/'>Events</Link>
             <Link to='/'>Sponsorships</Link>
           </div>
         </div>

@@ -29,6 +29,25 @@
   padding: 5rem;
 }
 .search__btn {
+  background-color: white;
+  color: rgb(2, 2, 66);
+  padding: 12px 26px;
+  font-size: 20px;
+  border-radius: 2px;
+  margin-right: 10px;
+  border: 1px solid rgb(2, 2, 66);
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  margin-top: 2rem;
+}
+.search__btn:hover {
+  background-color: rgb(2, 2, 66);
+  border: 1px solid white;
+  color: white;
+  transition: all 0.3s ease-out;
+}
+.addToCart__btn,
+.remove-button {
   background-color: rgb(2, 2, 66);
   color: white;
   padding: 12px 26px;
@@ -40,30 +59,11 @@
   transition: all 0.3s ease-out;
   margin-top: 2rem;
 }
-.search__btn:hover {
-  background-color: white;
-  border: 1px solid rgb(2, 2, 66);
-  color: rgb(2, 2, 66);
-  transition: all 0.3s ease-out;
-}
-.addToCart__btn,
-.remove-button {
-  background-color: white;
-  color: rgb(2, 2, 66);
-  padding: 12px 26px;
-  font-size: 20px;
-  border-radius: 2px;
-  margin-right: 10px;
-  border: 1px solid rgb(2, 2, 66);
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-  margin-top: 2rem;
-}
 .addToCart__btn:hover,
 .remove-button:hover {
-  background-color: rgb(2, 2, 66);
+  background-color: white;
   border: 1px solid rgb(2, 2, 66);
-  color: white;
+  color: rgb(2, 2, 66);
   transition: all 0.3s ease-out;
 }
 .footer {

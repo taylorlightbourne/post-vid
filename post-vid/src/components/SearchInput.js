@@ -7,7 +7,6 @@ import '../components/SearchInput.css';
 const SearchInput = (props) => {
 
     const handleSubmit = event => {
-        console.log(props.searchValue)
         event.preventDefault();
         props.getEventRequest(props.searchValue);
       }

@@ -5,7 +5,7 @@ import './CartSection.css';
 
 export default function Cart() {
   const cart = useSelector((state) => state.cart);
-  console.log(cart);
+
   return (
     <div className="cart-container">
       <div className="cart-header">
