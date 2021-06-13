@@ -37,7 +37,7 @@ As a user, I want to find events geared towards my interests. If I am searching 
 
 ### Future Additions:
 
-* Would like to experiment editing my code to get images to appear on the single events page. Props help generate the other details on that page, but the images will not load due to a timing issue.
+* Would like for images to appear on the single events page.
 * Would like to add the feature to go to the previous page without having to retype the keyword entered.
 * Would like for the error page to also appear when no events match the keyword entered. 
 
